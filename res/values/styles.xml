@@ -1,0 +1,47 @@
+<resources>
+
+   <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+     <style name="style_bg_bar">  
+        <item name="android:background">@drawable/yellow</item>  
+    </style>  
+    <style name="MyTheme" parent="android:Widget.Holo.ActionBar" >  
+        <item name="android:windowTitleBackgroundStyle">@style/style_bg_bar</item>  
+    </style>  
+    <style name="AppBaseTheme" parent="android:Widget.Holo.ActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+         <item name="android:actionBarStyle" >@style/myActionBarStyle</item> 
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <drawable name="BackBar">#87ceeb</drawable>  
+      
+    <style name="myActionBarStyle" parent="android:Widget.Holo.ActionBar" >  
+        <item name="android:background">#87ceeb</item>  
+        <item name="android:titleTextStyle">@style/AcBar_titleStyle</item>  
+    </style>  
+    <style name="AcBar_titleStyle">  
+        <item name="android:textSize">18sp</item>  
+        <item name="android:textColor">#000000</item>  
+    </style>  
+    
+    
+    <style name="MyDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item> 
+        <item name="android:backgroundDimEnabled">true</item> <!-- activity 不变暗 -->  
+        <item name="android:windowIsFloating">true</item> <!-- 是否浮现在activity之上 -->  
+        <item name="android:windowIsTranslucent">true</item> <!-- 半透明 -->  
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+</resources>
